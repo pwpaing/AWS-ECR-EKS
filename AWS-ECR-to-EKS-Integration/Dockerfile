@@ -8,7 +8,7 @@ RUN apt-get update && \
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Install apache and write hello world message
-RUN echo 'Hello from CloudQuickPOCs..!' > /var/www/html/index.html
+RUN echo 'Hello from EKS' > /var/www/html/index.html
 
 # Configure apache
 RUN echo '. /etc/apache2/envvars' > /root/run_apache.sh && \
